@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+actor 学生 as g
+actor "教員" as fc
+
+package el-Campus {
+  usecase "アンケートに回答" as UC1
+  usecase "課題をダウンロード" as UC2
+  usecase "掲示板を見る" as UC3
+  usecase "お知らせを発行" as UC4
+}
+package "ユニパス" {
+    usecase "シラバス参照" as UC100
+    usecase "履修登録" as UC101
+    usecase "成績確認" as UC102
+    usecase "時間割" as UC103
+    usecase "資格希望" as UC104
+
+}
+fc --> UC4
+fc --> UC1
+g --> UC1
+g --> UC2
+g --> UC3
+@enduml
