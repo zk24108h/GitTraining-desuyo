@@ -1,0 +1,11 @@
+@startuml
+
+[*] --> off 
+off --> on: スイッチを押す
+on --> off: 一定時間後
+off --> on: 暗くなる
+on --> off: スイッチを押す
+on --> off: 明るくなる
+
+
+@enduml
