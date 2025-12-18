@@ -1,0 +1,9 @@
+@startuml
+participant くらいあんと as a
+participant sever as b
+database    DB    as C
+a -> b : データを要求
+b -> C : 問い合わせ
+C --> b : データを要求
+b --> a :データ
+@enduml
