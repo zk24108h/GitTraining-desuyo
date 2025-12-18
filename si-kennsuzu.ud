@@ -1,0 +1,10 @@
+@startuml
+participant MainFunction as a
+participant Calculate as b
+participant    getInput    as C
+a -> b : データを計算する
+b -> C : 入力データを要求
+C --> b : 入力データ
+b --> a :計算結果
+a --> a: 表示
+@enduml
